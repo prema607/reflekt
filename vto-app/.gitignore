@@ -1,0 +1,62 @@
+# ==========================================
+# 1. Environment & API Secrets (CRITICAL)
+# ==========================================
+.env
+*.env
+*.env.local
+firebase_options.dart
+*.pem
+*.key
+
+# ==========================================
+# 2. Python & Backend
+# ==========================================
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Heavy AI model checkpoints & downloaded weights
+ckpt/
+*.onnx
+*.pth
+*.pkl
+*.bin
+
+# Local uploads / preprocessed dataset output
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/static/renders/*
+!backend/static/renders/.gitkeep
+
+# ==========================================
+# 3. Flutter & Dart Frontend
+# ==========================================
+frontend/.dart_tool/
+frontend/.fvm/
+frontend/.idea/
+frontend/.packages
+frontend/build/
+frontend/.pub-cache/
+frontend/.pub/
+
+# Symbol links / generated files
+*.pub_cache
+frontend/ios/Runner/Assets.xcassets/
+frontend/android/app/key.properties
+
+# ==========================================
+# 4. OS & IDE Specific
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
